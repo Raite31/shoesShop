@@ -1,0 +1,51 @@
+.top {
+    font-size: 10px;
+}
+
+/*第1行列表的样式*/
+#wrapper ul .first-li {
+    height: 25px;
+    margin-top: 20px;
+}
+
+/*第1行列表的span样式*/
+#wrapper ul li:nth-child(1) span {
+    display: inline-block;
+    width: 180px;
+    text-align: center;
+    border-right: grey 1px solid;
+    border-top: grey 1px solid;
+}
+
+/*第一行的id框的样式*/
+#wrapper ul li:nth-child(1) .id {
+    margin-left: 50px;
+}
+
+/*设置地址的表格的样式*/
+.address-table {
+    position: absolute;
+    left: 250px;
+    top: -0.5px;
+    z-index: 2;
+    display: none;
+    background-color: white;
+}
+
+fieldset {
+    margin: 30px;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    color: blue;
+    text-align: center;
+}
+
+label {
+    display: inline-block;
+    width: 60px;
+    margin: 5px;
+    text-align: justify;
+    text-align-last: justify;
+    margin-right: 10px;
+}

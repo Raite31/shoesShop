@@ -1,0 +1,21 @@
+.top{
+    font-size: 10px;
+}
+
+#wrapper ul .first-li {
+    height: 25px;
+    margin-top: 20px;
+}
+
+.wrapper ul li:nth-child(1) span {
+    display: inline-block;
+    width: 180px;
+    text-align: center;
+    border-right: grey 1px solid;
+    border-top: grey  1px solid;
+}
+
+.wrapper ul li:nth-child(1) .id {
+    margin-left: 50px;
+}
+

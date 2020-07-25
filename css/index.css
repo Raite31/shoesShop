@@ -1,0 +1,169 @@
+/*引入导航栏样式文件*/
+@import "public_float.css";
+@import "public_foot.css";
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/*整体*/
+#wrapper {
+    width: 1518px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+/*头部横条*/
+#bigHead {
+    width: 100%;
+    z-index: 2;
+    background: #e5e5e5;
+    opacity: 0.9;
+}
+
+#head {
+    width: 100%;
+    height: 100px;
+    border-bottom: grey 1px solid;
+}
+
+#head-img {
+    width: 30%;
+    height: 200px;
+    float: left;
+}
+
+/*导航栏固定的样式*/
+.fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+/*登录 注册按钮 购物车 订单*/
+.grid {
+    width: 100px;
+    height: 30px;
+    margin-left: 1200px;
+    position: absolute;
+    top: 30px;
+    color: black;
+}
+
+#firstPage {
+    margin-left: 840px;
+}
+
+#download {
+    margin-left: 1080px;
+}
+
+#register {
+    margin-left: 960px;
+}
+
+#order {
+    margin-left: 1300px;
+}
+
+#theName {
+    font-size: 13px;
+    width: 150px;
+    height: 20px;
+    top: 70px;
+}
+
+#theName p {
+    float: right;
+    color: blue;
+}
+
+/*轮播图*/
+.dalao {
+    width: 1510px;
+    height: 600px;
+    position: relative;
+    margin: 0px auto; /*在块元素上设置才有用，因此不在#datu上设置而在这里设置*/
+    border: 2px solid #444444;
+}
+
+.dalao #datu li{
+    transition: 3s;
+}
+
+/*选中的点的样式*/
+.active {
+    background-color: white;
+}
+
+/*点的样式*/
+.point {
+    position: absolute;
+    bottom: 10px;
+    left: 700px;
+}
+
+.dalao .point li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    border: 1px solid #000;
+    float: left;
+    text-align: center;
+    margin-left: 5px;
+}
+
+/*大图*/
+#dalao2 {
+    width: 1518px;
+    height: 700px;
+    margin: 0px auto;
+}
+
+#dalao2 #tupian {
+    width: 100%;
+    height: 700px;
+    text-align: center;
+}
+
+#dalao2 #tupian li {
+    float: left;
+    width: 23.1%;
+    margin: 80px 12px 20px 12px;
+    height: 650px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+#dalao2 #tupian img {
+    width: 100%;
+    border-radius: 20px;
+    height: 650px;
+}
+
+
+/*大图的透明盖层*/
+#tupian li .hid {
+    width: 353px;
+    height: 650px;
+    position: relative;
+    top: -655px;
+    opacity: 0;
+    background: #5a5a5a;
+    color: white;
+    border-radius: 20px;
+}
+
+/*大图透明盖层上的字*/
+#dalao2 #tupian li p {
+    position: absolute;
+    margin-top: 300px;
+    font-size: 50px;
+    font-family: 宋体;
+    text-align: center;
+
+}

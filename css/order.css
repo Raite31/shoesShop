@@ -1,0 +1,79 @@
+/*导航栏*/
+@import"public_float.css";
+
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/*整体*/
+#wrapper {
+    width: 1518px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+/*头部横条*/
+#head {
+    width: 100%;
+    height: 100px;
+    border-bottom: grey 1px solid;
+}
+
+#head-img {
+    width: 30%;
+    height: 200px;
+    float: left;
+}
+
+/*登录 注册按钮 购物车*/
+.grid {
+    width: 100px;
+    height: 30px;
+    margin-left: 1200px;
+    position: absolute;
+    top: 30px;
+}
+
+#firstPage {
+    margin-left: 840px;
+}
+
+#download {
+    margin-left: 1080px;
+}
+
+#register {
+    margin-left: 960px;
+}
+
+/*列表样式*/
+#order ul li:nth-child(1) span {
+    display: inline-block;
+    width: 155px;
+    text-align: center;
+    border-right: grey 1px solid;
+    border-top: grey  1px solid;
+}
+
+#order ul li:nth-child(1) .goods {
+    margin-left: 178px;
+}
+
+/*底部*/
+#foot {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    border-top: 2px solid gray;
+    top: 600px;
+}
+
+#foot p {
+    width: 100%;
+}

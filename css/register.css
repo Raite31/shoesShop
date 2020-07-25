@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+#all {
+    width: 100%;
+    height: 730px;
+    background-image: url("../photo/register1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*登录表格*/
+#Form {
+    width: 430px;
+    top: 130px;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    background-color: white;
+    opacity: 0;
+    animation: Form 5s forwards;
+}
+
+@keyframes Form {
+    0%{opacity: 0}
+    100%{opacity: 1}
+}
+
+form p {
+    position: relative;
+    margin: 10px;
+    font-size: 25px;
+}
+
+.aa {
+    height: 20px;
+    width: 200px;
+}
+
+#email {
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    margin: 10px;
+    border-bottom: 1px solid black;
+    color: gray;
+}
+
+#download {
+    margin-bottom: 10px;
+    width: 100px;
+    height: 30px;
+}
+
+#register {
+    margin-bottom: 10px;
+    width: 100px;
+    height: 30px;
+}
+
+/*底部*/
+
+#foot {
+    position: absolute;
+    top: 650px; /*想要用top left之类的定位 就肯定要加上上面的position才行*/
+    width: 100%;
+    text-align: center;
+    color: white;
+}

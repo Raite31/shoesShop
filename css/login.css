@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.top_p{
+    position: absolute;
+    top: 50px;
+    left: 580px;
+    background-color: grey;
+    font-size: 50px;
+    border-radius: 10px;
+}
+
+.aa{
+    margin: 20px;
+}
+
+.login {
+    top:150px;
+    left: 580px;
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+
+}
+
+fieldset {
+    width: 365px;
+    height: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+label {
+    display: inline-block;
+    width: 80px;
+    margin: 20px;
+    text-align: justify;
+    text-align-last: justify;
+    /*margin-right: 20px;*/
+}

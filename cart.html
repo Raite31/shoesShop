@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <link rel="stylesheet" type="text/css" href="css/cart.css">
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="js/cart.js"></script>
+</head>
+
+<body>
+<!--整体-->
+<div id="wrapper">
+    <!--头部-->
+    <div id="head">
+
+    </div>
+
+    <!--登录注册控件-->
+    <a href="index.html">
+        <div id="firstPage" class="grid">首页</div>
+    </a>
+    <a href="download.html">
+        <div id="download" class="grid">登录</div>
+    </a>
+    <a href="register.html">
+        <div id="register" class="grid">注册</div>
+    </a>
+    <div id="address" class="grid">管理地址</div>
+    <button id="num" class="grid">结算</button>
+
+
+    <!--  遮罩-->
+    <div id="cover"
+         style="background: #000; position: absolute; left: 0px; top: 0px; width: 100%; filter: alpha(opacity=30); opacity: 0.3; display: none; z-index: 2 ">
+    </div>
+    <!--地址表格-->
+    <form class="address-table">
+        <fieldset>
+            <legend>用户地址</legend>
+            <br>
+            <label>姓名：</label><input type="text" placeholder="请输入收货人姓名" class="name"/><br>
+            <label>省份：</label><input type="text" placeholder="请选择州/省份" list="province" class="province"/>
+            <datalist id="province">
+                <option value="黑龙江省"></option>
+                <option value="山西省"></option>
+                <option value="吉林省"></option>
+                <option value="辽宁省"></option>
+                <option value="贵州省"></option>
+                <option value="四川省"></option>
+                <option value="湖北省"></option>
+                <option value="湖南省"></option>
+                <option value="广东省"></option>
+            </datalist>
+            <br>
+            <label>城市：</label><input type="text" placeholder="请输入城市" class="city"/><br>
+            <label>县市：</label><input type="text" placeholder="请输入区/县" class="space"/><br>
+            <label>地址：</label><input type="text" placeholder="请输入详细地址" class="details-address"/><br>
+            <label>电话：</label><input type="tel" placeholder="请输入电话" class="tel"/><br>
+            <label><input type="button" class="cancle" value="取消"></label>
+            <label><input type="button" class="certain" value="确定"></label>
+        </fieldset>
+    </form>
+
+    <div id="cart">
+        <h1>我的购物车</h1>
+        <ul>
+
+        </ul>
+    </div>
+
+    <!--底部-->
+    <div id="foot">
+    </div>
+</div>
+</body>
+</html>

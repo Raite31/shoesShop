@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/*头部横条*/
+head {
+    width: 100%;
+    height: 100px;
+}
+
+.head-p {
+    width: 70%;
+    height: 70px;
+    display: inline-block;
+    position: relative;
+    padding-left: 50px;
+    /*padding-top: 5px;*/
+    top: -60px;
+    font-size: 50px;
+    letter-spacing: 100px;
+    background-color: grey;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/*整体*/
+.wrapper {
+    width: 1518px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    left: 180px;
+}
+
+.wrapper ul li:nth-child(1) span {
+    display: inline-block;
+    width: 155px;
+    position: relative;
+    left: 20px;
+    top: 20px;
+    text-align: center;
+    border-right: grey 1px solid;
+    border-top: grey  1px solid;
+}
+
+.wrapper ul li:nth-child(1) .goods {
+    margin-left: 20px;
+}

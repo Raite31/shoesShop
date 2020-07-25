@@ -1,0 +1,27 @@
+.top{
+    font-size: 10px;
+}
+
+.shop-table {
+    top:30px;
+    left: 250px;
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+}
+
+fieldset {
+    width: 500px;
+    height: 500px;
+    padding: 20px;
+    text-align: center;
+}
+
+label {
+    display: inline-block;
+    width: 80px;
+    margin: 20px;
+    text-align: justify;
+    text-align-last: justify;
+    /*margin-right: 20px;*/
+}

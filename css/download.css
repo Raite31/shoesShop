@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/*大体*/
+#Download {
+    width: 1530px;
+    margin: 0 auto;
+}
+
+/*头部*/
+h1 {
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid yellow;
+    background-color: black;
+    color: white;
+    font-family: 楷体;
+    font-size: 50px;
+}
+
+/*登录表格*/
+#Form {
+    margin: 0 auto;
+    width: 430px;
+    border: 1px solid #000000;
+    text-align: center;
+    margin-top: 20px;
+}
+
+form p {
+    position: relative;
+    margin: 10px;
+    font-size: 25px;
+}
+
+.aa {
+    height: 20px;
+    width: 200px;
+}
+
+#email {
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    margin: 10px;
+    border-bottom: 1px solid black;
+    color: gray;
+}
+
+#download {
+    margin-bottom: 10px;
+    width: 100px;
+    height: 30px;
+}
+
+#register {
+    margin-bottom: 10px;
+    width: 100px;
+    height: 30px;
+}
+
+/*动态图*/
+#shoes0-div {
+    width: 800px;
+    margin: 0 auto;
+}
+
+#shoes0 {
+    width: 100%;
+    height: 350px;
+    margin: 0 auto;
+}
+
+/*底部*/
+#foot {
+    text-align: center;
+    border-top: 2px solid gray;
+    position: absolute;
+    top: 650px; /*想要用top left之类的定位 就肯定要加上上面的position才行*/
+    width: 1519.2px;
+}

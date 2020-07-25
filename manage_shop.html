@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品列表</title>
+    <link rel="stylesheet" type="text/css" href="css/manage_shop.css">
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="js/manage_shop.js"></script>
+</head>
+<body>
+<p class="top">你好，当前位置>商品列表</p>
+<div class="wrapper">
+    <ul>
+        <li class="first-li"><span class="id">商品ID</span><span class="name">商品名称</span><span class="allName">商品描述</span><span class="num">商品库存</span><span class="price">商品单价</span><span class="pic">商品图片</span><span class="page">商品页号</span><span class="change">修改</span><span class="del">删除</span></li>
+    </ul>
+</div>
+
+<div id="cover"
+     style="background: #000; position: absolute; left: 0px; top: 0px; width: 100%; filter: alpha(opacity=30); opacity: 0.3; display: none; z-index: 2 ">
+</div>
+<form class="address-table">
+    <fieldset>
+        <legend>商品信息修改</legend>
+        <br>
+        <label>商品名称：</label><input type="text" placeholder="请输入商品名称" class="name"/><br>
+        <label>商品描述：</label><input type="text" placeholder="请输入商品描述" class="allName"/><br>
+        <label>商品库存：</label><input type="text" placeholder="请输入商品库存" class="num"/><br>
+        <label>商品单价：</label><input type="text" placeholder="请输入商品单价" class="price"/><br>
+        <label>商品图片：</label><input type="text" placeholder="请输入商品图片" class="pic"/><br>
+        <label>商品页号：</label><input type="text" placeholder="请输入商品页号" class="page"/><br>
+        <label><input type="button" class="cancle" value="取消"></label>
+        <label><input type="button" class="certain" value="确定"></label>
+    </fieldset>
+</form>
+</body>
+</html>

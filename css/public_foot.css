@@ -1,0 +1,80 @@
+/*底部*/
+#foot {
+    width: 100%;
+    border-top: 2px solid gray;
+    margin-top: 100px;
+}
+
+.foot_top {
+    height: 45px;
+    background-color: black;
+    color: white;
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.foot_top span {
+    margin-left: 100px;
+}
+
+.foot_top_img {
+    position: relative;
+    top: 7px;
+    left: -2px;
+}
+
+.foot_lie_da {
+    float: left;
+    margin-left: 100px;
+    font-weight: bold;
+}
+
+.foot_lie_da li {
+    height: 20px;
+    margin-top: 20px;
+    color: black;
+}
+
+.foot_lie_xiao {
+    float: left;
+    margin-top: 20px;
+    margin-left: 250px;
+}
+
+.foot_lie_xiao a {
+    font-weight: bold;
+}
+
+.foot_lie_xiao li {
+    height: 20px;
+    margin-top: 20px;
+    font-size: 12px;
+    color: gray;
+}
+
+.foot_bottom {
+    float: left;
+    width: 86%;
+    margin-left: 100px;
+    margin-top: 30px;
+    border-top: 1px solid gray;
+    margin-bottom: 10px;
+}
+
+.foot_bottom li {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 30px;
+    font-size: 10px;
+    color: gray;
+}
+
+.foot_bottom_head {
+    font-size: 12px !important;
+    color: black !important;
+}
+
+.foot_bottom_fenlei {
+    margin-left: 350px !important;
+}
