@@ -51,26 +51,39 @@ $(function () {
     var list = $(".detailPhoto ul");
     var list1 = $(".produce");
     var list2 = $(".choose_name")
-    $.post("./php/shop.php", {id: id, type: "photoList"}, function (data) {
-        if (data == "0") {
-            alert("查询失败")
-        } else {
-            for (var i in data) {
-                var nodeli = "<li><img src='" + data[i].photo_path + "'></li>"
-                list.append(nodeli)
-                $(".detailPhoto ul li").css({
-                    "width": "48%",
-                    "float": "left",
-                    "margin": "5px",
-                    "border": "1px solid #DDDDDD"
-                })
-                $(".detailPhoto ul li img").css({
-                    "width": "100%"
-                })
+    $.ajax({
+        method: "POST",
+        url: "http://localhost/php/shop.php",
+        data: {id: id, type: "photoList"}, 
+        async: true,
+        dataType: "JSON",
+        success: function (data) {
+            if (data == "0") {
+                alert("查询失败")
+            } else {
+                for (var i in data) {
+                    var nodeli = "<li><img src='" + data[i].photo_path + "'></li>"
+                    list.append(nodeli)
+                    $(".detailPhoto ul li").css({
+                        "width": "48%",
+                        "float": "left",
+                        "margin": "5px",
+                        "border": "1px solid #DDDDDD"
+                    })
+                    $(".detailPhoto ul li img").css({
+                        "width": "100%"
+                    })
+                }
             }
         }
-    }, 'json');
-    $.post("./php/shop.php", {id: id, type: "shopMessage"}, function (data) {
+    });
+    $.ajax({
+        method: "POST",
+        url: "http://localhost/php/shop.php", // todo::这里写不太对
+        data: {id: id, type: "shopMessage"},
+        async: true,
+        dataType: "JSON",
+        success: function (data) {
         if (data == '0') {
             alert("查询失败2");
         } else {
@@ -85,7 +98,45 @@ $(function () {
                 })
             }
         }
-    }, 'json')
+    }
+    })
 
-    /*加入购物车按钮*/
+    /*码数的交互设计*/
+    $(".choose_size ul:eq(0)").siblings("ul").children("li").hover(function () {
+        $(this).css({
+            "border": "1px solid black",
+        })
+    }, function () {
+        $(this).css({
+            "border": "",
+        })
+    })
+
+    /*码数的选择设计*/
+    $(".choose_size ul:eq(0)").siblings("ul").children("li").click(function () {
+        $(this).addClass("choose_certain");
+        $(this).siblings().removeClass("choose_certain");
+        $(this).parent("ul").siblings().children().removeClass("choose_certain");
+        var size = $(this).text();
+    })
+
+    /*添加购物车*/
+    var userid = $.cookie("userid");
+    var shop = [];
+    $(".cart button").click(function () {
+        /*这里的id是商品的id，在上面有定义*/
+        shop.push(id);
+        localStorage.setItem("shop", JSON.stringify(shop));
+        if (userid == null) {
+            alert("请先登录/注册！");
+        } else {
+            $.post("./php/cart.php", {userid: userid, id: id, amount: 1, type: "insert"}, function (data) {
+                if (data == 'exist') {
+                    alert('该商品已存在购物车中，无需重复添加！')
+                } else {
+                    alert('该商品成功添加购物车！')
+                }
+            })
+        }
+    })
 })
